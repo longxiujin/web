@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8"> 
+<title>交互式录播器</title> 
+
+
+ <body>
+	<style>
+.column {
+  float: left;
+  width: 25%;
+}
+ </style>
+
+<div id="container" style="background-color:#b0c4de;width:800px;height:600px;">
+
+<div id="header" style="background-color:#FFA500;">
+<h1 style="margin-bottom:1;text-align:center;">人与自然/h1></div>
+ 
+<div class="column">
+<div id="menu" style="height:240px;width:160px;text-align:center;">
+<b>菜单</b><br>
+<ul>
+<li><a href="file:///C:/Users/student/eclipse-workspace/first/src/lxj.html">首页</a></li>
+<li><a href="#news">ֲ植物世界</a></li>
+<li><a href="#contact">动物世界</a></li>
+<li><a href="#about">人类世界</a></li>
+</ul>
+	</div>
+	</div>
+	
+
+<div > 
+  <button onclick="playPause()">播放/暂停</button> 
+  <button onclick="makeBig()">放大</button>
+  <button onclick="makeSmall()">缩小</button>
+  <button onclick="makeNormal()">正常</button>
+   </div>
+   <br>
+<div class="column">	
+<div>
+
+<video id="video1" width="320" ;>
+    <source src="movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  </video>
+   </div>
+   </div>
+
+<script> 
+var myVideo=document.getElementById("video1"); 
+function playPause()
+{ 
+	if (myVideo.paused) 
+	  myVideo.play(); 
+	else 
+	  myVideo.pause(); 
+} 
+	function makeBig()
+{ 
+	myVideo.width=460; 
+} 
+	function makeSmall()
+{ 
+	myVideo.width=220; 
+} 
+	function makeNormal()
+{ 
+	myVideo.width=320; 
+} 
+</script> 
+
+<div id="meu" style="height:240px;width:120px;  float: right;text-align:center; ">
+<b>问答区</b>
+	<br>
+	<br>
+<button onclick="myFunction()">文本提问</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x;
+	var person=prompt("请输入你的问题");
+	if (person!=null && person!=""){
+	    x="你的问题是" + person ;
+	    document.getElementById("demo").innerHTML=x;
+	}
+}
+</script>
+	<button onclick="myFunction()">音频提问</button>
+		<br>
+		<br>
+	
+	<button onclick="mFunction()">视频提问</button>
+	<p id="dem"></p>
+	<script>
+function mFunction(){
+	var y;
+	var vedio=prompt("请输入你的视频");
+	if (vedio!=null &&vedio!=""){
+	    x="你的问题是：" +vedio ;
+	 document.getElementById("dem").innerHTML=y;
+	}
+}
+	</script>	</div>
+
+</div>
+
+</body> 
+
+
+
+</html>

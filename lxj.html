@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+	<style>
+	body{
+
+	background-image:url('IMG20190723074742.jpg');
+	background-color:#cccccc;
+	background-color:#b0c4de;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+ </style>
+<div id="container" style="background-color:#b0c4de;width：800px;">
+
+<div id="header">
+  <h1 style="margin-bottom:1;text-align:center;">交互式录播器</h1>
+  <h2 style="margin-bottom:1;text-align:center;">欢迎来到人与自然视频学习平台</h2>
+</div>
+
+<div class="column">
+<div id="menu" style="height:200px;width:220px;text-align:center;background-color:#b0c4de">
+  <form action="">
+  <br>  <br>
+       用 户: <input type="text" name="user">
+  <br>  <br>
+       密 码:  <input type="password" name="password">
+   </form>
+   <br>  
+   <button onclick="mFunction()">注册</button>
+<script>
+function mFunction()
+{
+    setTimeout(function(){alert("Hello")},3000);
+}
+</script>
+  <br>  
+   <p><a href="file:///C:/Users/student/eclipse-workspace/first/src/f23.html">登录</a></p>
+
+</div>
+</div>	
+
+<div class="column">
+<div id="content" style="height:440px;">
+  
+</div>
+</div>
+
+<div id="meu" style="height:240px;width:200px;  float: right;text-align:center; background-color:#b0c4de">
+<script>
+  function myFunction(){
+	alert("基于人们对于自然界的好奇，为了满足他们的需要，本平台将汇聚着关于自然界中神奇的动植物，你可以足不出户就能了解大自然的神奇，并能与志同道合的朋友共同讨论。");
+  }
+  </script>
+  <body><p>简单介绍</p>
+   <input type="button" onclick="myFunction()" value="简介" />
+  </body>
+
+</div>
+
+</div>
+
+</body>
+</html>
